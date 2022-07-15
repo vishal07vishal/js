@@ -10,7 +10,6 @@ function unseen () {
 
 //Q2
 function jqueryAjax(){
-
     $.ajax({
         url: "https://jsonplaceholder.typicode.com/todos/12",
         type: "GET",
