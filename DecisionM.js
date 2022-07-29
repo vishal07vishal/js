@@ -62,32 +62,24 @@ const findRelation = (x,y) => {
 //Que5//Your school has the following grading system based upon the marks(M) obtained by a student:
 
 const findGrades = (a) => {
-  switch(true){
-    case a<=10:
-      return 'E';
-      
-      
-    case a>=11 && a<=20:
-      return 'D';
-      
-      
-    case a>=21 && a<=30:
-      return 'C';
-      
-    
-    case a>=31 && a<=40:
-      return 'B';
-      
-   
-    case a>=41 && a<=50:
-      return 'A';
-      
-     
-    default:
-      return "invalid";
-      
-      
-  }
+  if (a<= 10){
+      return  "E";
+    }
+    else if (a>=11 && a<=20){
+      return "D";
+    }
+    else if (a>=21 && a<=30){
+      return "C";
+    }
+     else if (a>=31 && a<=40){
+      return "B";
+    }
+     else if (a>=41 && a<=50){
+      return "A";
+    }
+    else{
+      return "invalid marks"
+    }
 };
 
 
